@@ -7,7 +7,6 @@ import {
   RiShoppingCartLine,
   RiMenuLine,
   RiArrowRightLine,
-  RiShoppingBagLine,
   RiCheckboxFill,
   RiWhatsappFill,
   RiMessengerFill,
@@ -24,13 +23,10 @@ import homeCactus from "/IMAGES/home-cactus.png";
 import newCactus1 from "/IMAGES/new-cactus-1.png";
 import newCactus2 from "/IMAGES/new-cactus-2.png";
 import newCactus3 from "/IMAGES/new-cactus-3.png";
-import shopCactus1 from "/IMAGES/shop-cactus-1.png";
-import shopCactus2 from "/IMAGES/shop-cactus-2.png";
-import shopCactus3 from "/IMAGES/shop-cactus-3.png";
-import shopCactus4 from "/IMAGES/shop-cactus-4.png";
-import shopCactus5 from "/IMAGES/shop-cactus-5.png";
+
 import careCactus from "/IMAGES/care-cactus.png";
 import contactCactus from "/IMAGES/contact-cactus.png";
+import Shop from "../Shop/Shop";
 
 const Main = () => {
   const [showMenu, setShowMenu] = useState(false);
@@ -245,7 +241,7 @@ const Main = () => {
 
       {/* ==================== SHOP ==================== */}
 
-      <section className="shop section" id="shop">
+      {/* <section className="shop section" id="shop">
         <h2 className="section--title">THE BEST PLANTS</h2>
 
         <div className="shop--container container grid">
@@ -319,7 +315,8 @@ const Main = () => {
             </button>
           </article>
         </div>
-      </section>
+      </section> */}
+      <Shop/>
 
       {/* ==================== CARE ==================== */}
 
