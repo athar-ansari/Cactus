@@ -68,7 +68,7 @@ const Main = () => {
         id="header"
       >
         <nav className="nav container">
-          <a href="#" className="nav--logo">
+          <a href="#" className="nav--logo anchr">
             {" "}
             <RiCactusLine color="64CD8A" size="1.5rem" />
             Cactus{" "}
@@ -82,9 +82,9 @@ const Main = () => {
               <li className="nav--item">
                 <a
                   href="#home"
-                  className={`nav--link ${
+                  className={`nav--link anchr ${
                     activeLink === "home" ? "active-link" : ""
-                  }`}
+                  }`} 
                   onClick={() => setActiveLink("home")}
                 >
                   Home
@@ -94,7 +94,7 @@ const Main = () => {
               <li className="nav--item">
                 <a
                   href="#new"
-                  className={`nav--link ${
+                  className={`nav--link anchr ${
                     activeLink === "new" ? "active-link" : ""
                   }`}
                   onClick={() => setActiveLink("new")}
@@ -106,7 +106,7 @@ const Main = () => {
               <li className="nav--item">
                 <a
                   href="#shop"
-                  className={`nav--link ${
+                  className={`nav--link anchr ${
                     activeLink === "shop" ? "active-link" : ""
                   }`}
                   onClick={() => setActiveLink("shop")}
@@ -118,7 +118,7 @@ const Main = () => {
               <li className="nav--item">
                 <a
                   href="#care"
-                  className={`nav--link ${
+                  className={`nav--link anchr ${
                     activeLink === "care" ? "active-link" : ""
                   }`}
                   onClick={() => setActiveLink("care")}
@@ -130,7 +130,7 @@ const Main = () => {
               <li className="nav--item">
                 <a
                   href="#contact"
-                  className={`nav--link ${
+                  className={`nav--link anchr ${
                     activeLink === "contact" ? "active-link" : ""
                   }`}
                   onClick={() => setActiveLink("contact")}
@@ -148,7 +148,7 @@ const Main = () => {
           </div>
 
           <div className="nav--actions" >
-            <Link to="/" >
+            <Link to="/login" >
               <RiUserLine color="white" />
             </Link>
             <RiShoppingCartLine />
@@ -188,14 +188,14 @@ const Main = () => {
               </p>
 
               <div className="home--buttons">
-                <a href="#" className="button">
+                <a href="#shop" className="button anchr goto-btn">
                   <span>
-                    <RiArrowRightLine />
+                    <RiArrowRightLine /> 
                   </span>
                   GO TO SHOP
                 </a>
 
-                <a href="#" className="button--link">
+                <a href="#contact" className="button--link anchr">
                   MORE DETAILS
                 </a>
               </div>
@@ -206,7 +206,7 @@ const Main = () => {
 
       {/* ==================== NEWS ==================== */}
 
-      <section className="new section" id="new">
+      <section className="new section sctn" id="new">
         <div className="new--container container grid">
           <div className="new--data">
             <h2 className="section--title">
@@ -241,86 +241,11 @@ const Main = () => {
 
       {/* ==================== SHOP ==================== */}
 
-      {/* <section className="shop section" id="shop">
-        <h2 className="section--title">THE BEST PLANTS</h2>
-
-        <div className="shop--container container grid">
-          <article className="shop-card">
-            <img src={shopCactus1} alt="image" className="shop--img" />
-
-            <h3 className="shop--title">
-              Gymnocalycium <br />
-              Cactus
-            </h3>
-            <span className="shop--price">$15</span>
-
-            <button className="shop--button">
-              <RiShoppingBagLine />
-            </button>
-          </article>
-
-          <article className="shop-card">
-            <img src={shopCactus2} alt="image" className="shop--img" />
-
-            <h3 className="shop--title">
-              Echeveria <br />
-              Succulent
-            </h3>
-            <span className="shop--price">$10</span>
-
-            <button className="shop--button">
-              <RiShoppingBagLine />
-            </button>
-          </article>
-
-          <article className="shop-card">
-            <img src={shopCactus3} alt="image" className="shop--img" />
-
-            <h3 className="shop--title">
-              Ferocactus <br />
-              Cactus
-            </h3>
-            <span className="shop--price">$15</span>
-
-            <button className="shop--button">
-              <RiShoppingBagLine />
-            </button>
-          </article>
-
-          <article className="shop-card">
-            <img src={shopCactus4} alt="image" className="shop--img" />
-
-            <h3 className="shop--title">
-              Key Lime Pie <br />
-              Succulent
-            </h3>
-            <span className="shop--price">$10</span>
-
-            <button className="shop--button">
-              <RiShoppingBagLine />
-            </button>
-          </article>
-
-          <article className="shop-card">
-            <img src={shopCactus5} alt="image" className="shop--img" />
-
-            <h3 className="shop--title">
-              Melocactus <br />
-              Cactus
-            </h3>
-            <span className="shop--price">$15</span>
-
-            <button className="shop--button">
-              <RiShoppingBagLine />
-            </button>
-          </article>
-        </div>
-      </section> */}
-      <Shop/>
+            <Shop/>
 
       {/* ==================== CARE ==================== */}
 
-      <section className="care section" id="care">
+      <section className="care section sctn" id="care">
         <h2 className="section--title">
           CARE AND HEALTH FOR <br />
           YOUR CACTUS
@@ -333,45 +258,45 @@ const Main = () => {
             <li className="care--item">
               <RiCheckboxFill color="64CD8A" size="2.8rem" />
 
-              <p>
+              <p2>
                 In cold times, add water once a month and during the summer do
                 it when the soil is very dry.
-              </p>
+              </p2>
             </li>
 
             <li className="care--item">
               <RiCheckboxFill color="64CD8A" size="2rem" />
 
-              <p>
+              <p2>
                 Have good drainage so that the cactus does not accumulate water.
-              </p>
+              </p2>
             </li>
 
             <li className="care--item">
               <RiCheckboxFill color="64CD8A" size="2rem" />
 
-              <p>
+              <p2>
                 Place your cactus or succulent in a location with indirect
                 light.
-              </p>
+              </p2>
             </li>
 
             <li className="care--item">
               <RiCheckboxFill color="64CD8A" size="2.8rem" />
 
-              <p>
+              <p2>
                 Do not water more than necessary, as it can accumulate too much
                 water and the plant will rot.
-              </p>
+              </p2>
             </li>
 
             <li className="care--item">
               <RiCheckboxFill color="64CD8A" size="2.5rem" />
 
-              <p>
+              <p2>
                 Do not expose to high temperatures, as succulent plants are not
                 fans of extremes.
-              </p>
+              </p2>
             </li>
           </ul>
         </div>
@@ -379,7 +304,7 @@ const Main = () => {
 
       {/* ==================== CONTACT ==================== */}
 
-      <section className="contact section" id="contact">
+      <section className="contact section sctn" id="contact">
         <h2 className="section--title">
           YOU WANT A CACTUS <br />
           CONTACT US
@@ -393,15 +318,15 @@ const Main = () => {
               <h3 className="contact--title">Write to us</h3>
 
               <div className="contact--social">
-                <a href="#" target="_blank">
+                <a href="#" target="_blank anchr">
                   <RiWhatsappFill />
                 </a>
 
-                <a href="#" target="_blank">
+                <a href="#" target="_blank anchr">
                   <RiMessengerFill />
                 </a>
 
-                <a href="#" target="_blank">
+                <a href="#" target="_blank anchr">
                   <RiMailFill />
                 </a>
               </div>
@@ -430,7 +355,7 @@ const Main = () => {
       <footer className="footer">
         <div className="footer--container container grid">
           <div>
-            <a href="#" className="footer--logo">
+            <a href="#" className="footer--logo anchr">
               <RiCactusLine color="64CD8A" size="1.95rem" /> Cactus
             </a>
 
@@ -446,19 +371,19 @@ const Main = () => {
 
               <ul className="footer--links">
                 <li>
-                  <a href="#" className="footer--link">
+                  <a href="#" className="footer--link anchr">
                     About Us
                   </a>
                 </li>
 
                 <li>
-                  <a href="#" className="footer--link">
+                  <a href="#" className="footer--link anchr">
                     Products
                   </a>
                 </li>
 
                 <li>
-                  <a href="#" className="footer--link">
+                  <a href="#" className="footer--link anchr">
                     Features
                   </a>
                 </li>
@@ -470,19 +395,19 @@ const Main = () => {
 
               <ul className="footer--links">
                 <li>
-                  <a href="#" className="footer--link">
+                  <a href="#" className="footer--link anchr">
                     Blogs & News
                   </a>
                 </li>
 
                 <li>
-                  <a href="#" className="footer--link">
+                  <a href="#" className="footer--link anchr">
                     Contacts Us
                   </a>
                 </li>
 
                 <li>
-                  <a href="#" className="footer--link">
+                  <a href="#" className="footer--link anchr">
                     {" "}
                     FAQs
                   </a>
@@ -494,15 +419,15 @@ const Main = () => {
               <h3 className="footer--title">SOCIAL MEDIA</h3>
 
               <div className="footer--social">
-                <a href="#" target="_blank" className="footer--social-link">
+                <a href="#" target="_blank" className="footer--social-link anchr">
                   <RiFacebookCircleFill />
                 </a>
 
-                <a href="#" target="_blank" className="footer--social-link">
+                <a href="#" target="_blank" className="footer--social-link anchr">
                   <RiInstagramFill />
                 </a>
 
-                <a href="#" target="_blank" className="footer--social-link">
+                <a href="#" target="_blank" className="footer--social-link anchr">
                   <RiLinkedinBoxFill />
                 </a>
               </div>
@@ -520,11 +445,12 @@ const Main = () => {
 
       <a
         href="#"
-        className={`scrollup ${scrollY >= 350 ? "show-scroll" : ""}`}
+        className={`scrollup anchr ${scrollY >= 350 ? "show-scroll" : ""}`}
         id="scroll-up"
       >
         <RiArrowUpLine />
       </a>
+
     </>
   );
 };

@@ -68,7 +68,7 @@ const MoreItems = () => {
 
   return (
     <>
-      <section className="shop section more-item-page" id="more-items">
+      <section className="shop section more-item-page sctn" id="more-items">
         <Link to="/" className="shop--back--btn">
           <IoCaretBackCircleSharp size="1.35rem" />
           Back

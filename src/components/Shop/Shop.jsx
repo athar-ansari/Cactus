@@ -45,14 +45,14 @@ const items = [
 
 const Shop = () => {
   return (
-    <section className="shop section" id="shop">
+    <section className="shop section sctn" id="shop">
     <h2 className="section--title">THE BEST PLANTS</h2>
     <div className="shop--container container grid">
       {items.slice(0, 5).map((item) => (
         <ShopItem key={item.id} item={item} />
       ))}
     </div>
-    <Link to="/more-items" className='show--more-item'>Show More Items</Link>
+    <Link to="/more-items" className="show--more--item">Show More Items</Link>
   </section>
   );
 };

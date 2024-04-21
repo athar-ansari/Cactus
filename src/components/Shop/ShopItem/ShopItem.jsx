@@ -8,7 +8,7 @@ const ShopItem = ({ item }) => {
       <img src={item.image} alt="image" className="shop--img" />
       <h3 className="shop--title">{item.name}</h3>
       <span className="shop--price">${item.price}</span>
-      <button className="shop--button">
+      <button className="shop--button bttnn">
         <RiShoppingBagLine />
       </button>
     </article>
